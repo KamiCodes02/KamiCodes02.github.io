@@ -1,20 +1,27 @@
+```html
 <!DOCTYPE html>
 <html>
 <head>
     <title>Kamii's Website</title>
-<p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
     <style>
         body {
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             background-color: #0f172a;
             color: white;
             text-align: center;
-            padding: 50px;
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+            line-height: 1.6;
         }
 
         h1 {
             font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
         }
 
         p {
@@ -22,102 +29,103 @@
             color: #cbd5f5;
         }
 
-        .box {
+        .box, .project {
             background: #1e293b;
             padding: 20px;
-            margin: 20px auto;
-            width: 300px;
+            margin: 25px auto;
             border-radius: 10px;
+        }
+
+        .box {
+            width: 90%;
+            max-width: 500px;
+        }
+
+        .project {
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 6px 0;
         }
 
         a {
             color: #38bdf8;
             text-decoration: none;
         }
+
+        img {
+            margin: 20px 0;
+            border-radius: 10px;
+        }
     </style>
 </head>
 
 <body>
 
-    <h1>Hi, I'm Kamii </h1>
+    <p>Welcome to my website!</p>
+    <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" alt="Welcome image" />
+
+    <h1>Hi, I'm Kamii 👋🏾</h1>
     <p>Aspiring cybersecurity & software developer</p>
 
     <div class="box">
         <h2>Skills</h2>
-         <ul>
-        <li>Python</li>
-        <li>C++</li>
-        <li>HTML & CSS</li>
-        <li>JavaScript</li>
-        <li>SQLite</li>
-        <li>Machine Learning Basics</li>
-        <li>Git & GitHub</li>
-      </ul>
+        <ul>
+            <li>Python</li>
+            <li>C++</li>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>SQLite</li>
+            <li>Machine Learning Basics</li>
+            <li>Git & GitHub</li>
+        </ul>
     </div>
 
-   <section id="course-projects" class="card">
-      <h2>Course Projects and Class Demos</h2>
+    <section id="course-projects">
+        <h2>Course Projects and Class Demos</h2>
 
-      <div class="project">
-        <h3>Lab 5: SIS Web Portal</h3>
-        <p>
-          This project is a Student Information System web portal built with a
-          simple web interface and a SQLite database. It supports students,
-          faculty, courses, enrollments, drops, and grade submission.
-        </p>
-        <ul>
-          <li>Add students, faculty, and courses</li>
-          <li>Enroll students into courses</li>
-          <li>Drop students from courses</li>
-          <li>Submit grades for enrolled students</li>
-          <li>View seats remaining and student transcripts</li>
-        </ul>
-        <p>
-          This project helped me understand transactional database design,
-          primary keys, foreign keys, and many-to-many relationships using an
-          enrollments bridge table.
-        </p>
-      </div>
+        <div class="project">
+            <h3>Lab 5: SIS Web Portal</h3>
+            <p>This project is a Student Information System web portal built with a simple web interface and SQLite database.</p>
+            <ul>
+                <li>Add students, faculty, and courses</li>
+                <li>Enroll and drop students</li>
+                <li>Submit grades</li>
+                <li>View transcripts</li>
+            </ul>
+            <p>This project strengthened my understanding of database design and relationships.</p>
+        </div>
 
-      <div class="project">
-        <h3>Lab 6: SIS Enrollment BI Dashboard</h3>
-        <p>
-          This project is a business intelligence dashboard for analyzing SIS
-          enrollment data. It uses descriptive analytics and OLAP-style filtering
-          to summarize enrollment activity by term, department, and course.
-        </p>
-        <ul>
-          <li>Shows total enrollments for a selected term</li>
-          <li>Calculates average fill rate</li>
-          <li>Calculates course drop rate</li>
-          <li>Displays average grade performance</li>
-          <li>Includes course-level and department-level summaries</li>
-        </ul>
-        <p>
-          This project helped me understand the difference between transactional
-          tables and data warehouse summary tables for reporting.
-        </p>
-      </div>
+        <div class="project">
+            <h3>Lab 6: SIS Enrollment BI Dashboard</h3>
+            <p>This dashboard analyzes SIS enrollment data using business intelligence concepts.</p>
+            <ul>
+                <li>Total enrollments</li>
+                <li>Fill rates</li>
+                <li>Drop rates</li>
+                <li>Performance summaries</li>
+            </ul>
+            <p>This helped me understand reporting systems and data summaries.</p>
+        </div>
 
-      <div class="project">
-        <h3>AI Finger Calculator Demo</h3>
-        <p>
-          This class demo uses AI and computer vision concepts to create an
-          interactive finger-counting calculator. The application uses a camera
-          to detect hand gestures and perform calculator actions.
-        </p>
-        <ul>
-          <li>Uses real-time camera input</li>
-          <li>Detects fingers and hand gestures</li>
-          <li>Supports calculator-style interaction</li>
-          <li>Shows how AI can be integrated into a user interface</li>
-        </ul>
-        <p>
-          This demo helped me see how AI can move beyond theory and become part
-          of practical, interactive applications.
-        </p>
-      </div>
+        <div class="project">
+            <h3>AI Finger Calculator Demo</h3>
+            <p>An interactive calculator using AI and hand gesture recognition.</p>
+            <ul>
+                <li>Real-time camera input</li>
+                <li>Finger detection</li>
+                <li>Calculator interaction</li>
+            </ul>
+            <p>This showed me practical AI implementation.</p>
+        </div>
     </section>
+
     <div class="box">
         <h2>Contact</h2>
         <p>Email: kundwange02@gmail.com</p>
@@ -125,3 +133,4 @@
 
 </body>
 </html>
+```
